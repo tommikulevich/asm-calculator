@@ -46,7 +46,7 @@
     </MASM>
     <Link>
       <AdditionalDependencies>user32.lib;irvine32.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>Q:\PG\Coding\OM-Lab\MASM611_MVS2019;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>Q:\PG\Coding\OM-Lab\Projekt\Project;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <SubSystem>Console</SubSystem>
       <RandomizedBaseAddress>false</RandomizedBaseAddress>
       <DataExecutionPrevention>
@@ -62,14 +62,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <MASM Include="addem.asm" />
-    <MASM Include="fun.asm" />
-    <MASM Include="fun2.asm" />
-    <MASM Include="fun3.asm" />
-    <MASM Include="min1.asm" />
+    <MASM Include="divide.asm" />
+    <MASM Include="modulo.asm" />
+    <MASM Include="power.asm" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="addMain.cpp" />
+    <ClCompile Include="calcMain.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
